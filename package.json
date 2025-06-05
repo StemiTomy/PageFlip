@@ -3,32 +3,34 @@
   "version": "2.0.7",
   "main": "dist/js/page-flip.browser.js",
   "browser": "dist/js/page-flip.browser.js",
-  "author": "oleg.litovski9@gmail.com",
+  "author": "stemitomy@gmail.com",
   "license": "MIT",
   "description": "Powerful, simple and flexible JS Library for creating realistic and beautiful page turning effect",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Nodlik/StPageFlip.git"
+    "url": "https://github.com/StemiTomy/StPageFlip.git"
   },
-  "publishConfig": {},
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
   "homepage": "https://nodlik.github.io/StPageFlip/",
-  "dependencies": {},
   "devDependencies": {
+    "@types/react": "^19.1.6",
     "@typescript-eslint/eslint-plugin": "^2.33.0",
     "@typescript-eslint/parser": "^2.33.0",
-    "css-loader": "^3.5.3",
-    "eslint": "^7.0.0",
+    "css-loader": "^7.1.2",
+    "eslint": "^6.8.0",
     "eslint-plugin-typescript": "^0.14.0",
     "prettier": "^2.0.5",
-    "rollup-plugin-postcss": "^3.1.1",
+    "rollup-plugin-postcss": "^4.0.2",
     "rollup-plugin-terser": "^6.1.0",
     "rollup-plugin-typescript2": "^0.27.1",
     "style-loader": "^1.2.1",
     "ts-loader": "^7.0.4",
-    "typedoc": "^0.17.8",
+    "typedoc": "^0.28.5",
     "typescript": "latest",
-    "webpack": "^4.43.0",
-    "webpack-cli": "^3.3.11"
+    "webpack": "^5.99.9",
+    "webpack-cli": "^6.0.1"
   },
   "scripts": {
     "eslint": "eslint . --ext .ts",
@@ -45,5 +47,8 @@
     "fold",
     "frontend",
     "javascript"
-  ]
+  ],
+  "dependencies": {
+    "react": "^19.1.0"
+  }
 }

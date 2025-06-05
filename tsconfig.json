@@ -4,8 +4,16 @@
         "declaration": true,
         "declarationDir": "dist",
         "noImplicitAny": true,
-        "lib": ["es6", "es2016", "dom", "dom.iterable"],
-        "module": "es6",
+        
+        "lib": ["es6", "es2016", "dom", "dom.iterable", "es2017"],
+        "sourceMap": true,
+        "jsx": "react",
+        "moduleResolution": "node",
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "plugins": [{ "name": "typescript-plugin-css-modules" }],
+
+        "module": "esnext",
         "target": "es2017"
     },
     "typedocOptions": {
@@ -18,5 +26,7 @@
         "excludeProtected": true,
         "categorizeByGroup": true
     },
+    "include": ["src/**/*"],
+    "exclude": ["node_modules", "build", "src/**/*.test.tsx"],
     "reference": []
 }
